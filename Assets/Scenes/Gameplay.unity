@@ -1217,6 +1217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1446284616}
   - component: {fileID: 1446284617}
+  - component: {fileID: 1446284618}
   m_Layer: 0
   m_Name: GameOverUi
   m_TagString: Untagged
@@ -1255,6 +1256,18 @@ MonoBehaviour:
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: 4e5e4ec9393f4e042a9845ede3883d22, type: 3}
   m_SortingOrder: 0
+--- !u!114 &1446284618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446284615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea7b3f7572c0ae245b907d7523dc4bba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1474529459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,6 +1731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1892986574}
   - component: {fileID: 1892986575}
+  - component: {fileID: 1892986576}
   m_Layer: 0
   m_Name: WinUi
   m_TagString: Untagged
@@ -1754,8 +1768,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: cc87851a3b5799147aa5a0977eef7ea8, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: 4e5e4ec9393f4e042a9845ede3883d22, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: d42757653178e23408de7131117a6a50, type: 3}
   m_SortingOrder: 0
+--- !u!114 &1892986576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892986573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7d98824fe245149b5ac975f27a37ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1921368439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2613740875129533151, guid: bb1f19beb567cfc479031ce58907a9c9, type: 3}

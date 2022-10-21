@@ -8,12 +8,12 @@ public class GameOverState : IState
 
     public void Start()
     {
-        UiManager.instance.GameOverUi.enabled = true;
+        UiManager.instance.GameOverUi.rootVisualElement.visible = true;
     }
 
     public void Stop()
     {
-        UiManager.instance.GameOverUi.enabled = false;
+        UiManager.instance.GameOverUi.rootVisualElement.visible = false;
     }
 
     public void Update()

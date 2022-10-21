@@ -35,4 +35,14 @@ public class UiManager : MonoBehaviour
         gameOverUi.rootVisualElement.visible = false;
         WinUi.rootVisualElement.visible = false;
     }
+
+    public void SetWinData()
+    {
+        winUi.GetComponentInParent<WinUiController>().SetData();
+    }
+
+    public void SetLoosedata()
+    {
+        gameOverUi.GetComponentInParent<WinUiController>().SetData();
+    }
 }

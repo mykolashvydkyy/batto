@@ -1,8 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Styles/StyleSheet.uss?fileID=7433441132597879392&amp;guid=a8f2e0eeaf0ddea449de5486918a6966&amp;type=3#StyleSheet" />
     <ui:VisualElement name="Parent" style="flex-grow: 1; align-items: center;">
-        <ui:VisualElement name="Menu" style="width: 300px; height: 600px; background-color: rgba(194, 176, 238, 0.46); align-items: center;">
-            <ui:Label text="Batto Jutsu" display-tooltip-when-elided="true" name="Title" style="width: 176px; left: 60px; top: 18px; font-size: 30px; position: absolute; justify-content: flex-start; -unity-text-align: upper-center; color: rgb(255, 255, 255);" />
+        <ui:VisualElement name="Menu" class="Menu">
+            <ui:Label text="Batto Jutsu" display-tooltip-when-elided="true" name="Title" class="LabelTitle" />
             <ui:Button text="Start" display-tooltip-when-elided="true" name="StartButton" class="DefaultButton" />
         </ui:VisualElement>
     </ui:VisualElement>

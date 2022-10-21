@@ -9,6 +9,23 @@ public class ReactionManager : MonoBehaviour
     private bool _playerReacted;
     private bool _enemyReacted;
 
+    public float EnemyReaction => _enemyReaction;
+    public float PlayerReaction => _playerReaction;
+
+    public static ReactionManager instance;
+
+    private void Awake()
+    {
+        if (instance is null)
+        {
+            instance = this;
+        }
+        else if (instance == this)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void OnEnable()
     {
         EventsManager.instance.events.Signal.AddListener(OnSignal);
@@ -81,5 +98,14 @@ public class ReactionManager : MonoBehaviour
 
         _playerReaction = float.MaxValue;
         _playerReacted = true;
+    }
+
+    public void ResetManager()
+    {
+        _enemyReaction = 0;
+        _playerReaction = 0;
+        _enemyReacted = false;
+        _playerReacted = false;
+        _waitForReaction= false;
     }
 }
