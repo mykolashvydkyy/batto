@@ -1998,6 +1998,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: baab903955bd4624b9ed9af203a79cc0, type: 2}
   - {fileID: 11400000, guid: bd3be22b5363c4d4eacb10c01487aa24, type: 2}
   - {fileID: 11400000, guid: 70dc7e00ccaaee9478bc94ee5631ff3c, type: 2}
+  - {fileID: 11400000, guid: 395aff334ea92ff4b981e74523949aeb, type: 2}
+  - {fileID: 11400000, guid: 9f7c3f231909c604d8ceaa26ab8d57e0, type: 2}
+  - {fileID: 11400000, guid: 1bcf5b9f13e7c584b8297525280466bd, type: 2}
+  - {fileID: 11400000, guid: 72cf966e45a5eb34aa31cabcbf7f05e5, type: 2}
+  - {fileID: 11400000, guid: 955dbfda12efebf4faa3974b7bce1ebc, type: 2}
+  - {fileID: 11400000, guid: 1409a9c6d5935c946845524bd000d4b6, type: 2}
 --- !u!1 &2072131292
 GameObject:
   m_ObjectHideFlags: 0

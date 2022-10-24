@@ -28,7 +28,7 @@ public class WinUiController : MonoBehaviour
         var playerReaction = ReactionManager.instance.PlayerReaction == float.MaxValue
             ? 0
             : ReactionManager.instance.PlayerReaction;
-        _myReactionLabel.text = $"Your Reaction: {playerReaction} s";
+        _myReactionLabel.text = $"Your Reaction: {playerReaction.ToString("F2")} s";
         _enemyReactionLabel.text = $"Enemy Reaction: {ReactionManager.instance.EnemyReaction.ToString("F2")} s";
     }
 }

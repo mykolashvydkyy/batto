@@ -43,6 +43,6 @@ public class UiManager : MonoBehaviour
 
     public void SetLoosedata()
     {
-        gameOverUi.GetComponentInParent<WinUiController>().SetData();
+        gameOverUi.GetComponentInParent<GameOverUiController>().SetData();
     }
 }

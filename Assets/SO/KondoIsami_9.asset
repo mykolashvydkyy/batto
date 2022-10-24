@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f414f657ab0af94e80fbc13c76921aa, type: 3}
-  m_Name: AverageEnemy
+  m_Name: KondoIsami_9
   m_EditorClassIdentifier: 
-  MinReaction: 0.3
-  MaxReaction: 0.5
+  Name: Kondo Isami
+  MinReaction: 0
+  MaxReaction: 0

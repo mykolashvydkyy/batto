@@ -9,6 +9,7 @@ public class GameOverState : IState
     public void Start()
     {
         UiManager.instance.GameOverUi.rootVisualElement.visible = true;
+        GameManager.instance.resetRounds();
     }
 
     public void Stop()

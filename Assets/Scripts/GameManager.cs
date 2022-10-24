@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     private GameObject _enemy;
 
     private Vector3 _enemyPosition = new Vector3(50, -30);
+    private int _currentRound = -1;
 
     public static GameManager instance;
     private void Awake()
@@ -48,8 +49,14 @@ public class GameManager : MonoBehaviour
         StateMachine.instance.State.Update();
     }
 
+    public void resetRounds()
+    {
+        _currentRound = -1;
+    }
+
     public void StartRound()
     {
+        _currentRound++;
         StateMachine.instance.ChangeState(new GamePlayState());
         ReactionManager.instance.ResetManager();
         _player.Reset();
@@ -65,12 +72,12 @@ public class GameManager : MonoBehaviour
             _enemy = null;
         }
         _enemy = Instantiate(_enemyPrefab, _enemyPosition, Quaternion.identity);
-        _enemy.GetComponentInChildren<Enemy>().Init(_enemies[0]);
+        _enemy.GetComponentInChildren<Enemy>().Init(_enemies[_currentRound]);
     }
 
     private void OnPlayerDead()
     {
-        UiManager.instance.SetWinData();
+        UiManager.instance.SetLoosedata();
         StartCoroutine(DelayAction(() => StateMachine.instance.ChangeState(new GameOverState())));
     }
 

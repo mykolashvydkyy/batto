@@ -1,5 +1,6 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
+using TMPro;
 
 public class Enemy : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Enemy : MonoBehaviour
     private bool _react;
     private Animator _animator;
     private AudioSource _audio;
+
+    [SerializeField] private TMP_Text name;
     
     private void OnEnable()
     {
@@ -29,6 +32,7 @@ public class Enemy : MonoBehaviour
     {
         EnemySo = enemySo;
         _reactionTime = Random.Range(EnemySo.MinReaction, EnemySo.MaxReaction);
+        name.text = EnemySo.Name;
     }
 
     void Start()
