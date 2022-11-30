@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MinamotoTamaetomo_1
   m_EditorClassIdentifier: 
   Name: Minamoto Tamaetomo
-  MinReaction: 0.3
-  MaxReaction: 0.6
+  MinReaction: 0.51
+  MaxReaction: 0.53

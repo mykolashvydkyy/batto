@@ -2,7 +2,7 @@
     <Style src="project://database/Assets/UI/Styles/StyleSheet.uss?fileID=7433441132597879392&amp;guid=a8f2e0eeaf0ddea449de5486918a6966&amp;type=3#StyleSheet" />
     <ui:VisualElement name="Parent" style="flex-grow: 1; align-items: center;">
         <ui:VisualElement name="Menu" class="Menu">
-            <ui:Label text="Batto Jutsu" display-tooltip-when-elided="true" name="Title" class="LabelTitle" />
+            <ui:Label text="Batto Jutsu" display-tooltip-when-elided="true" name="Title" class="LableTitle" />
             <ui:Button text="Start" display-tooltip-when-elided="true" name="StartButton" class="DefaultButton" />
         </ui:VisualElement>
     </ui:VisualElement>

@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     private Animator _animator;
     private AudioSource _audio;
 
-    [SerializeField] private TMP_Text name;
+    [SerializeField] private TMP_Text enemyName;
     
     private void OnEnable()
     {
@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
     {
         EnemySo = enemySo;
         _reactionTime = Random.Range(EnemySo.MinReaction, EnemySo.MaxReaction);
-        name.text = EnemySo.Name;
+        enemyName.text = EnemySo.Name;
     }
 
     void Start()

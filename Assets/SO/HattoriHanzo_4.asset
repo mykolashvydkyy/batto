@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HattoriHanzo_4
   m_EditorClassIdentifier: 
   Name: Hattori Hanzo
-  MinReaction: 0
-  MaxReaction: 0
+  MinReaction: 0.45
+  MaxReaction: 0.47

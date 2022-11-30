@@ -5,11 +5,11 @@ using UnityEngine;
 public class GamePlayState : IState
 {
     public string Name => "GamePlayState";
+    private bool _clicked = false;
 
     public void Start()
     {
         UiManager.instance.GamePlayUi.rootVisualElement.visible = true;
-        GameManager.instance.StartRound();
     }
 
     public void Stop()
@@ -19,9 +19,11 @@ public class GamePlayState : IState
 
     public void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!_clicked && Input.GetMouseButtonDown(0))
         {
             EventsManager.instance.events.InvokePlayerReaction();
+            _clicked = true;
+            Debug.Log("Clicked");
         }
     }
 }

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: AshikagaIoshiteru_3
   m_EditorClassIdentifier: 
   Name: Ashikaga Iositeru
-  MinReaction: 0.1
-  MaxReaction: 0.2
+  MinReaction: 0.47
+  MaxReaction: 0.49

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SasakiKojiro_6
   m_EditorClassIdentifier: 
   Name: Sasaki Kojiro
-  MinReaction: 0
-  MaxReaction: 0
+  MinReaction: 0.41
+  MaxReaction: 0.43

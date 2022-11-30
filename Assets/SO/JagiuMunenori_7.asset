@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: JagiuMunenori_7
   m_EditorClassIdentifier: 
   Name: Jagiu Munenori
-  MinReaction: 0
-  MaxReaction: 0
+  MinReaction: 0.39
+  MaxReaction: 0.41

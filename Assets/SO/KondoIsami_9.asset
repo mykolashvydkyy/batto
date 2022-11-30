@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: KondoIsami_9
   m_EditorClassIdentifier: 
   Name: Kondo Isami
-  MinReaction: 0
-  MaxReaction: 0
+  MinReaction: 0.35
+  MaxReaction: 0.37

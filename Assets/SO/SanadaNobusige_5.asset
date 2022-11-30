@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SanadaNobusige_5
   m_EditorClassIdentifier: 
   Name: Sanada Nobushige
-  MinReaction: 0
-  MaxReaction: 0
+  MinReaction: 0.43
+  MaxReaction: 0.45

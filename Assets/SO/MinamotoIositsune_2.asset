@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MinamotoIositsune_2
   m_EditorClassIdentifier: 
   Name: Minamoto Iositsune
-  MinReaction: 0.3
-  MaxReaction: 0.5
+  MinReaction: 0.49
+  MaxReaction: 0.51

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: JagiuDzubeiMitsuyoshi_8
   m_EditorClassIdentifier: 
   Name: Jagiu Dzubei Mitsuyoushi
-  MinReaction: 0
-  MaxReaction: 0
+  MinReaction: 0.37
+  MaxReaction: 0.39

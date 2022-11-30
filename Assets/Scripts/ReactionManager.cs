@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ReactionManager : MonoBehaviour
@@ -8,9 +10,14 @@ public class ReactionManager : MonoBehaviour
 
     private bool _playerReacted;
     private bool _enemyReacted;
+    private List<float> _playerReactions = new List<float>();
 
     public float EnemyReaction => _enemyReaction;
     public float PlayerReaction => _playerReaction;
+
+    public float FastestReaction => _playerReactions.Min();
+    public float SlowestReaction => _playerReactions.Max();
+    public float AverageReaction => _playerReactions.Average();
 
     public static ReactionManager instance;
 
@@ -57,6 +64,7 @@ public class ReactionManager : MonoBehaviour
             if (_playerReacted && _enemyReacted)
             {
                 _waitForReaction = false;
+                _playerReactions.Add(_playerReaction);
                 if (_enemyReaction >= _playerReaction)
                 {
                     EventsManager.instance.events.InvokeEnemyDie();
@@ -67,6 +75,11 @@ public class ReactionManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void ResetStatistic()
+    {
+        _playerReactions.Clear();
     }
 
     private void OnSignal()
